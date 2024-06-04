@@ -1,0 +1,93 @@
+<!--
+  Name: Kourosh Ghahramani
+  Name: Wuihee yap
+  Date: Jun 03, 2024
+  Section: CSE 154 AF
+  This file is part of the High Velocity website.
+  It is designed to display a collection of sneakers with filtering options.
+  The page includes a navigation bar, filter options, a sneaker grid, and a footer.
+  Styling is handled via external CSS files, and interactivity is managed by JavaScript.
+
+  Dependencies:
+  - Google Fonts for custom typography.
+  - index.css for general site-wide styling.
+  - sneakers.css for sneaker-specific styling.
+  - sneakers.js for handling sneaker functionality.
+  - navbar.js for handling navigation bar functionality.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/sneakers.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/sneakers.js" defer></script>
+    <script src="../scripts/navbar.js" defer></script>
+    <title>High Velocity - Sneakers</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <!-- Brand Logo -->
+      <a href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo"></a>
+      <!-- Navbar Links -->
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="sneakers.html?search=men">Men's</a></li>
+        <li><a href="sneakers.html?search=women">Women's</a></li>
+        <li><a href="../pages/sneakers.html">Sneakers</a></li>
+      </ul>
+
+      <!-- Search Bar -->
+      <section id="controls">
+        <input type="search" placeholder="Search..." id="search-bar">
+        <a href="../pages/cart.html" id="cart-btn" class="icon-btn hidden">
+          <img src="../img/cart.png" alt="cart logo">
+        </a>
+        <a href="../pages/user.html" id="user-btn" class="icon-btn hidden">
+          <img src="../img/user.png" alt="User Login">
+        </a>
+        <a href="../pages/login.html" id="login-btn" class="text-btn">Login</a>
+        <a href="../pages/signup.html" id="sign-up-btn" class="text-btn">Sign Up</a>
+      </section>
+    </nav>
+
+    <!-- Filters -->
+    <section id="contents">
+      <section id="filters">
+        <h2>Filter Sneakers</h2>
+        <div id="view-toggle">
+          <img id="toggle-view" src="../img/dashboard.png" alt="Toggle View" class="icon-btn">
+        </div>
+        <form id="filter-form">
+          <label for="price">Price:</label>
+          <select id="price" name="price">
+            <option value="all">All</option>
+            <option value="under-150">Under $150</option>
+            <option value="150-250">$150-$250</option>
+            <option value="over-250">Over $250</option>
+          </select>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender">
+            <option value="all">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+          </select>
+          <button type="submit">Apply</button>
+        </form>
+      </section>
+      <!-- Sneaker Grid -->
+      <section id="sneaker-grid">
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © 2024 High Velocity, Pte Ltd. All rights reserved
+      </p>
+    </footer>
+  </body>
+</html>

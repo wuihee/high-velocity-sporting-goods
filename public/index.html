@@ -1,0 +1,79 @@
+<!--
+  Name: Kourosh Ghahramani
+  Name: Wuihee yap
+  Date: Jun 03, 2024
+  Section: CSE 154 AF
+  This file displays the main page for High Velocity website. It provides
+  an introduction to our product lineup and provides links to login and signup.
+  Once the user logs in, it provides links to the cart and user account. It also
+  provides links to browse sneakers.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="../scripts/navbar.js" defer></script>
+  <title>High Velocity</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Brand Logo -->
+    <a href=""><img id="logo" src="img/logo.png" alt="Logo"></a>
+    <!-- Navbar Links -->
+    <ul>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/sneakers.html?search=men">Men's</a></li>
+      <li><a href="pages/sneakers.html?search=women">Women's</a></li>
+      <li><a href="pages/sneakers.html">Sneakers</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <section id="controls">
+      <input type="search" placeholder="Search..." id="search-bar">
+      <a href="pages/cart.html" id="cart-btn" class="icon-btn hidden">
+        <img src="img/cart.png" alt="cart logo">
+      </a>
+      <a href="pages/user.html" id="user-btn" class="icon-btn hidden">
+        <img src="img/user.png" alt="User Login">
+      </a>
+      <a href="pages/login.html" id="login-btn" class="text-btn">Login</a>
+      <a href="pages/signup.html" id="sign-up-btn" class="text-btn">Sign Up</a>
+    </section>
+  </nav>
+
+  <!-- Video -->
+  <section id="welcome-video">
+    <video muted autoplay loop src="img/homepage-video.mp4"></video>
+    <h2>TERMINAL VELOCITY</h2>
+    <p>Our newest collection of HIGH VELOCITY running shoes.</p>
+  </section>
+
+  <!-- Featured -->
+  <section id="featured">
+    <h2>Featured</h2>
+    <section class="scroll-container">
+      <img src="img/featured/potential-energy.png" alt="Featured Shoe 1">
+      <img src="img/featured/gravity.png" alt="Featured Shoe 2">
+      <img src="img/featured/terminal-velocity.png" alt="Featured Shoe 3">
+      <img src="img/featured/static-friction.png" alt="Featured Shoe 3">
+      <img src="img/featured/acceleration.png" alt="Featured Shoe 3">
+    </section>
+  </section>
+
+  <!-- Search Results -->
+  <section id="search-results" class="hidden"></section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2024 High Velocity, Inc. All rights reserved
+    </p>
+  </footer>
+</body>
+</html>

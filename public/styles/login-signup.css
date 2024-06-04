@@ -1,0 +1,92 @@
+/*
+  Name: Kourosh Ghahramani
+  Name: Wuihee Yap
+  Date: Jun 3, 2024
+  Section: CSE 154 AF
+  Description: This stylesheet provides additional styles for the signup and login form in the
+  signup.html and login.html page of the web application. It includes styles for
+  the form container, headings, form elements, buttons, and message containers.
+   The design aims for a clean and modern look with a focus on readability and usability.
+*/
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+#message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  width: 250px;
+}
+
+.message.success {
+  background-color: #d4f4d7;
+  border: 1px solid #9fefab;
+}
+
+.message.warning {
+  background-color: #fff4d6;
+  border: 1px solid #ffe5a6;
+}
+
+.message.error {
+  background-color: #fcdada;
+  border: 1px solid #f9a6a6;
+}
+
+.message .close {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}

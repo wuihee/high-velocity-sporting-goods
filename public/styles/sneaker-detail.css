@@ -1,0 +1,119 @@
+/*
+  Name: Kourosh Ghahramani
+  Name: Wuihee Yap
+  Date: Jun 3, 2024
+  Section: CSE 154 AF
+  Description: This stylesheet provides the layout and styling for the sneaker detail page
+  of the web application. It includes styles for the sneaker detail container, image,
+  information section, size buttons, add to cart button, and message container. The design
+  aims for a clean and modern look with a focus on readability and usability.
+*/
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+#sneaker-detail p {
+  margin: 8px;
+}
+
+#sneaker-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#sneaker-img {
+  width: 400px;
+  border-radius: 3%;
+  margin-right: 40px;
+}
+
+#sneaker-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#size-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.size-btn {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.9em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.selected,
+.size-btn:hover {
+  border: 2px solid #000;
+}
+
+#add-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 13px;
+}
+
+#add-btn:hover {
+  background-color: #333;
+}
+
+/* Message Container */
+#message-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  width: 300px;
+}
+
+.message.success {
+  background-color: #d4f4d7;
+  border: 1px solid #9fefab;
+}
+
+.message.warning {
+  background-color: #fff4d6;
+  border: 1px solid #ffe5a6;
+}
+
+.message.error {
+  background-color: #fcdada;
+  border: 1px solid #f9a6a6;
+}
+
+.message .close {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}

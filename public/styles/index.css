@@ -1,0 +1,150 @@
+/*
+  Name: Kourosh Ghahramani
+  Name: Wuihee Yap
+  Date: Jun 3, 2024
+  Section: CSE 154 AF
+  Description: This stylesheet provides the layout and styling for
+  the main index page of the web application. It includes styles for the overall
+  body, navigation bar, logo, navigation links, search bar, buttons, welcome video,
+  featured items, and footer. The design aims for a clean and modern look with a focus on
+  readability and usability.
+*/
+
+body {
+  font-family: "Radio Canada Big", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+}
+
+#controls input {
+  font-family: "Radio Canada Big", sans-serif;
+  background-color: #ececec;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+#controls a {
+  text-decoration: none;
+}
+
+#controls a:visited {
+  text-decoration: none;
+}
+
+.icon-btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 9px;
+  padding-right: 0;
+}
+
+.icon-btn img {
+  height: 35px;
+}
+
+.text-btn {
+  font-family: "Radio Canada Big", sans-serif;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#login-btn {
+  color: black;
+}
+
+#sign-up-btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#sign-up-btn:hover {
+  background-color: #333333;
+}
+
+#welcome-video {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 25px 25px 25px;
+}
+
+#welcome-video h2 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+section video {
+  width: 100%;
+}
+
+#featured {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#featured img {
+  margin: 10px;
+  width: 25%;
+}
+
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Footer */
+footer {
+  color: #808080;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Miscellaneous */
+
+.hidden {
+  display: none;
+}

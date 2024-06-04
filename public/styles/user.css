@@ -1,0 +1,69 @@
+/*
+  Name: Kourosh Ghahramani
+  Name: Wuihee Yap
+  Date: Jun 3, 2024
+  Section: CSE 154 AF
+  Description: This stylesheet provides the layout and styling for the user page
+  of the web application. It includes styles for the user container, greeting,
+  order history, and individual item orders. The design aims for a clean and modern look
+  with a focus on readability and usability.
+*/
+
+#user-container {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+}
+
+#user-greeting {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#order-history-title {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#order-history {
+  margin-top: 10px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.item-container img {
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.info-container p {
+  margin: 3px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+/* Logout */
+#logout-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#logout-btn:hover {
+  background-color: #333;
+}

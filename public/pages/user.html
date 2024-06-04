@@ -1,0 +1,78 @@
+<!--
+  Name: Kourosh Ghahramani
+  Name: Wuihee yap
+  Date: Jun 03, 2024
+  Section: CSE 154 AF
+  This file is part of the High Velocity website.
+  It is designed to display user-specific information, including a greeting, order history,
+  and a logout button.
+  The page includes a navigation bar, user info section, and a footer.
+  Styling is handled via external CSS files, and interactivity is managed by JavaScript.
+
+  Dependencies:
+  - Google Fonts for custom typography.
+  - index.css for general site-wide styling.
+  - user.css for user page-specific styling.
+  - user.js for handling user-specific functionality.
+  - navbar.js for handling navigation bar functionality.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/user.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <script src="../scripts/user.js" defer></script>
+  <script src="../scripts/navbar.js" defer></script>
+  <title>User Page - High Velocity</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Brand Logo -->
+    <a href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo"></a>
+    <!-- Navbar Links -->
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sneakers.html?search=men">Men's</a></li>
+      <li><a href="sneakers.html?search=women">Women's</a></li>
+      <li><a href="sneakers.html">Sneakers</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <section id="controls">
+      <input type="search" placeholder="Search..." id="search-bar">
+      <a href="cart.html" id="cart-btn" class="icon-btn hidden">
+        <img src="../img/cart.png" alt="Cart">
+      </a>
+      <a href="user.html" id="user-btn" class="icon-btn hidden">
+        <img src="../img/user.png" alt="User Login">
+      </a>
+      <a href="login.html" id="login-btn" class="text-btn">Login</a>
+      <a href="signup.html" id="sign-up-btn" class="text-btn">Sign Up</a>
+    </section>
+  </nav>
+
+  <!-- User Info -->
+  <section id="user-container">
+    <h1>Hello, <span id="username"></span></h1>
+    <div id="order-history-title">Order History</div>
+    <div id="order-history">
+      <!-- Order history will be loaded here -->
+    </div>
+    <div id="error-container"></div>
+    <button id="logout-btn">Logout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2024 High Velocity, Inc. All rights reserved
+    </p>
+  </footer>
+</body>
+</html>

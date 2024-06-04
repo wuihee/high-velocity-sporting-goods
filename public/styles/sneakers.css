@@ -1,0 +1,119 @@
+/*
+  Name: Kourosh Ghahramani
+  Name: Wuihee Yap
+  Date: Jun 3, 2024
+  Section: CSE 154 AF
+  Description: This stylesheet provides the layout and styling for the sneakers page
+  of the web application. It includes styles for the main content area, sneaker grid,
+  list view, filters, and view toggle buttons. The design aims for a clean and modern look
+  with a focus on readability and usability.
+*/
+#contents {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+/* Sneaker Grid */
+#sneaker-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sneaker-item {
+  background-color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  width: 25%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.sneaker-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* List View */
+.list-view .sneaker-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-view .sneaker-item img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.list-view .sneaker-item p {
+  flex: 1;
+}
+
+/* Filters */
+#filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#filters h2 {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 24px;
+}
+
+#filters form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#filters form label {
+  position: relative;
+  top: 10px;
+}
+
+#filters form select,
+#filters form button {
+  font-family: "Radio Canada Big", sans-serif;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#filters form button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+  width: 80px;
+}
+
+#filters form button:hover {
+  background-color: #333;
+}
+
+#view-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#toggle-view {
+  margin-top: -15px;
+}

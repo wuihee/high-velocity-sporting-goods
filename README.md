@@ -1,2 +1,15 @@
-# high-velocity-sporting-goods
-Full stack e-commerce site made for my final project.
+# High Velocity Sporting Goods
+
+## Instructions
+
+Install dependencies.
+
+```node
+npm install
+```
+
+To run the server on <http://localhost:8000>.
+
+```bash
+node app.js
+```
